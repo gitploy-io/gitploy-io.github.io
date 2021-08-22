@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@reach/router": "^1.3.4",
+    "antd": "^4.16.12",
     "axios": "^0.21.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-hot-loader": "^4.13.0",
     "react-static": "^7.5.1",
+    "react-static-plugin-less": "^7.3.0",
     "react-static-plugin-reach-router": "^7.5.1",
     "react-static-plugin-sitemap": "^7.5.1",
     "react-static-plugin-source-filesystem": "^7.5.1"

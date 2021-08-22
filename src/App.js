@@ -5,6 +5,7 @@ import { Link, Router } from 'components/Router'
 import Dynamic from 'containers/Dynamic'
 
 import './app.css'
+import './app.less'
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
 addPrefetchExcludes(['dynamic'])
