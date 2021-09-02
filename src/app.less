@@ -10,3 +10,46 @@
 @layout-header-background: @purple-10;
 @layout-body-background: #fff;
 @border-radius-base: 5px;
+
+// Font
+@text-color: @purple-10;
+@font-size-base: 18px;
+
+// Gitploy
+@gitploy-prefix: ~'gitploy';
+
+.@{gitploy-prefix} {
+  &-yaml {
+    &-block {
+      border-radius: 10px;
+      background-color: #722ed1;
+      padding: 15px;
+    }
+
+    &-divider {
+      border-color: #d3adf7;
+      border-right-width: 0.5px;
+      border-right-style: solid;
+      padding-right: 5px;
+    } 
+
+    &-line-number {
+      color: #d3adf7;
+      margin: 0.3px 0px;
+    }
+
+    &-code {
+      padding-left: 20px;
+      color: #f9f0ff;
+      margin: 0.3px 0px;
+    }
+
+    &-code-key {
+      color: #f9f0ff;
+    }
+
+    &-code-value {
+      color: #ff85c0;
+    }
+  }
+}

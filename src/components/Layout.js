@@ -4,8 +4,8 @@ import { Row, Col } from 'antd'
 export function Base(props) {
   return <Row>
     <Col 
-      span={22}
-      lg={{span: 14, offset: 5}}
+      xs={{span: 22, offset: 1}}
+      xl={{span: 14, offset: 5}}
     >
       {props.children}
     </Col>
