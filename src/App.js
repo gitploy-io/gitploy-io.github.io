@@ -3,15 +3,17 @@ import { Root, Routes, addPrefetchExcludes } from 'react-static'
 import { 
   Row, 
   Col,
-  Button,
+  Typography
 } from 'antd'
 
 import { Link, Router } from 'components/Router'
-import { Header, Content } from 'components/Layout'
+import { Header, Content, Footer } from 'components/Layout'
 import HeaderLink from 'components/HeaderLink'
 import Dynamic from 'containers/Dynamic'
 
 import './app.less'
+
+const { Text } = Typography
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
 addPrefetchExcludes(['dynamic'])
@@ -29,40 +31,45 @@ function App() {
             lg={{span: 3}}
           >
             <HeaderLink>
-              <Link to="/">Home</Link>
+              <a href="https://cloud.gitploy.io/">Cloud</a>
             </HeaderLink>
           </Col>
           <Col 
             lg={{span: 3}}
           >
             <HeaderLink>
-              <Link to="/about">About</Link>
+              <a href="https://doc.gitploy.io/">Docs</a>
             </HeaderLink>
           </Col>
           <Col 
             lg={{span: 3}}
           >
             <HeaderLink>
-              <Link to="/blog">Blog</Link>
+              <Link to="/about">Pricing</Link>
             </HeaderLink>
           </Col>
           <Col 
             lg={{span: 3}}
           >
             <HeaderLink>
-              <Link to="/dynamic">Dynamic</Link>
+              <a href="https://github.com/gitploy-io/gitploy/discussions">Community</a>
             </HeaderLink>
           </Col>
         </Row>
       </Header>
       <Content>
-        <React.Suspense fallback={<em>Loading...</em>}>
+        <React.Suspense fallback={<em></em>}>
           <Router>
             <Dynamic path="dynamic" />
             <Routes path="*" />
           </Router>
         </React.Suspense>
       </Content>
+      <Footer>
+        <div style={{textAlign: "center", margin: "50px 0"}}>
+          <Text type="secondary">© 2021 Gitploy.io, Inc All rights reserved.</Text>
+        </div>
+      </Footer>
     </Root>
   )
 }
