@@ -23,8 +23,8 @@ export default () => (
         </Col>
       </Row>
       <Row >
-        <Col span={22} offset={1} md={{span: 8, offset: 8}} style={{textAlign: "center"}}>
-          <Title type="secondary" level={5}>Gitploy is the easiest way to build an advanced deployment system.</Title>
+        <Col span={18} offset={3} md={{span: 6, offset: 9}} style={{textAlign: "center"}}>
+          <Title type="secondary" level={5}>Gitploy is the easiest way to build an advanced deployment system around Github deployment API.</Title>
         </Col>
       </Row>
       <Row style={{marginTop: "20px"}}>
