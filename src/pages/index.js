@@ -8,7 +8,6 @@ import {
   Image,
 } from 'antd'
 
-import RocketIcon from '../assets/rocket-icon.png'
 import GithubLogo from '../assets/github.jpeg'
 import CodeHighliter from '../components/CodeHighliter'
 
@@ -17,11 +16,15 @@ const { Title, Text } = Typography
 
 export default () => (
   <div >
-    <div style={{ marginTop: "60px", textAlign: "center"}} >
+    <div style={{ marginTop: "120px"}} >
       <Row >
-        <Col lg={{offset: 5, span: 14}}>
-          <Title style={{color: "#120338"}} level={1}>Build advanced deployment pipeline in minutes.</Title>
-          <Title type="secondary" level={4}>Gitploy enables teams to deploy with lower risk and faster.</Title>
+        <Col span={24} md={{span: 12, offset: 6}} style={{textAlign: "center"}}>
+          <Title style={{color: "#120338"}} level={1}>Builds your deployment system around GitHub.</Title>
+        </Col>
+      </Row>
+      <Row >
+        <Col span={22} offset={1} md={{span: 8, offset: 8}} style={{textAlign: "center"}}>
+          <Title type="secondary" level={5}>Gitploy is the easiest way to build an advanced deployment pipeline.</Title>
         </Col>
       </Row>
       <Row style={{marginTop: "20px"}}>
