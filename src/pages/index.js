@@ -10,6 +10,7 @@ import {
 
 import GithubLogo from '../assets/github.jpeg'
 import CodeHighliter from '../components/CodeHighliter'
+import DeployForm from '../components/DeployForm'
 
 const colorDeepPurple = "#120338"
 const { Title, Text } = Typography
@@ -43,9 +44,9 @@ export default () => (
           </Space>
         </Col>
       </Row>
-      <Row>
-        <Col>
-        {/* TODO: Add Image */}
+      <Row style={{marginTop: "100px"}}>
+        <Col span={22} offset={1} md={{span: 16, offset: 4}} lg={{span: 14, offset: 5}}>
+          <DeployForm />
         </Col>
       </Row>
     </div>
