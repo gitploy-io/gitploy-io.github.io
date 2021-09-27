@@ -28,7 +28,7 @@ export default function DeployForm() {
   }
 
   const onFinishDeploy = () => {
-    message.info(<span>Let's start your first deployment! <a href="https://docs.gitploy.io/">#1</a> </span>)
+    message.info(<span>Let's build your first deployment pipeline! <a href="https://docs.gitploy.io/">#1</a> </span>)
   }
 
   return (
@@ -87,8 +87,12 @@ export default function DeployForm() {
               size="large"
               placeholder="Select branch"
             >
-              <Select.Option key={0}>main</Select.Option>
-              <Select.Option key={1}>new-feature</Select.Option>
+              <Select.Option key={0}>
+                <Text code className="gitploy-code">main</Text>
+              </Select.Option>
+              <Select.Option key={1}>
+                <Text code className="gitploy-code">new-feature</Text>
+              </Select.Option>
             </Select>
           </Form.Item> : 
           null}
@@ -104,10 +108,18 @@ export default function DeployForm() {
               size="large"
               placeholder="Select commit"
             >
-              <Select.Option key={0}><Text code className="gitploy-code">3fa3dbb</Text> - Evaluate the env field</Select.Option>
-              <Select.Option key={1}><Text code className="gitploy-code">7b35d8c</Text> - Remove the rollback method</Select.Option>
-              <Select.Option key={2}><Text code className="gitploy-code">77bb4b7</Text> - Fix the bug of rollback URL</Select.Option>
-              <Select.Option key={3}><Text code className="gitploy-code">ac866c4</Text> - Add installation documentation</Select.Option>
+              <Select.Option key={0}>
+                <Text code className="gitploy-code">3fa3dbb</Text> - Evaluate the env field
+              </Select.Option>
+              <Select.Option key={1}>
+                <Text code className="gitploy-code">7b35d8c</Text> - Remove the rollback method
+              </Select.Option>
+              <Select.Option key={2}>
+                <Text code className="gitploy-code">77bb4b7</Text> - Fix the bug of rollback URL
+              </Select.Option>
+              <Select.Option key={3}>
+                <Text code className="gitploy-code">ac866c4</Text> - Add installation documentation
+              </Select.Option>
             </Select>
           </Form.Item> : 
           null}
@@ -123,11 +135,21 @@ export default function DeployForm() {
               size="large"
               placeholder="Select tag"
             >
-              <Select.Option key={0}>v0.4.1</Select.Option>
-              <Select.Option key={1}>v0.4.0</Select.Option>
-              <Select.Option key={2}>v0.3.2</Select.Option>
-              <Select.Option key={3}>v0.3.1</Select.Option>
-              <Select.Option key={4}>v0.3.0</Select.Option>
+              <Select.Option key={0}>
+                <Text code className="gitploy-code">v0.4.1</Text>
+              </Select.Option>
+              <Select.Option key={1}>
+                <Text code className="gitploy-code">v0.4.0</Text>
+              </Select.Option>
+              <Select.Option key={2}>
+                <Text code className="gitploy-code">v0.3.2</Text>
+              </Select.Option>
+              <Select.Option key={3}>
+                <Text code className="gitploy-code">v0.3.1</Text>
+              </Select.Option>
+              <Select.Option key={4}>
+                <Text code className="gitploy-code">v0.3.0</Text>
+              </Select.Option>
             </Select>
           </Form.Item> : 
           null}

@@ -45,7 +45,7 @@ export default () => (
         </Col>
       </Row>
       <Row style={{marginTop: "100px"}}>
-        <Col span={22} offset={1} md={{span: 16, offset: 4}} lg={{span: 14, offset: 5}}>
+        <Col span={22} offset={1} md={{span: 16, offset: 4}} lg={{span: 10, offset: 7}}>
           <DeployForm />
         </Col>
       </Row>
@@ -70,10 +70,10 @@ export default () => (
           <Col span={0} md={{span: 11}}>
             <Image src={GithubLogo} preview={false}/>
           </Col>
-          <Col span={24} md={{span: 11, offset: 2}}>
+          <Col span={24} md={{span: 11, offset: 2}} style={{paddingTop: "30px"}}>
             <Title style={{color: colorDeepPurple}} level={3}>Powered By Github</Title>
-            <p><Text type="secondary">It's an event-driven decoupled way to deploy your code.</Text></p>
-            <p><Text type="secondary">You don't need to worry about the implementation details of deploying different types of applications.</Text></p>
+            <p><Text type="secondary">Gitploy enable teams or organizations to build loosely coupled tooling around GitHub deployment API.</Text></p>
+            <p><Text type="secondary">Do not worry about the implementation details of deploying different types of applications.</Text></p>
           </Col>
           <Col span={24} md={0}>
             <Image src={GithubLogo} preview={false}/>
