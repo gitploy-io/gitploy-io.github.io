@@ -33,6 +33,7 @@ export default function DeployForm() {
 
   return (
     <Card
+      hoverable
       style={{ width: '100%' }}
       tabList={tabList}
       activeTabKey={"deploy"}

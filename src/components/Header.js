@@ -27,7 +27,7 @@ export default function Header() {
           </Col>
           <Col lg={{span: 3}}>
             <HeaderLink>
-              <Link to="/about">Pricing</Link>
+              <Link to="/pricing">Pricing</Link>
             </HeaderLink>
           </Col>
           <Col lg={{span: 3}}>
