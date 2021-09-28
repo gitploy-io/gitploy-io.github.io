@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { 
   Card,
-  PageHeader,
   Form,
   Select,
   Radio,
@@ -34,18 +33,14 @@ export default function DeployForm() {
   return (
     <Card
       hoverable
-      style={{ width: '100%' }}
-      tabList={tabList}
-      activeTabKey={"deploy"}
     >
-      <PageHeader title="Deploy"/>
       <Form 
         name="form"
         style={{marginTop: "20px"}}
         onFinish={onFinishDeploy}
       >
         <Form.Item
-          labelCol={{span: 5}}
+          labelCol={{span: 8}}
           wrapperCol={{span: 10}}
           rules={[{required: true}]}
           label="Environment"
@@ -61,7 +56,7 @@ export default function DeployForm() {
           </Select>
         </Form.Item>
         <Form.Item
-          labelCol={{span: 5}}
+          labelCol={{span: 8}}
           wrapperCol={{span: 12}}
           rules={[{required: true}]}
           label="Type"
@@ -78,7 +73,7 @@ export default function DeployForm() {
         </Form.Item>
         {(["commit", "branch"].includes(type)) ?
           <Form.Item
-            labelCol={{span: 5}}
+            labelCol={{span: 8}}
             wrapperCol={{span: 10}}
             rules={[{required: true}]}
             label="Branch"
@@ -99,7 +94,7 @@ export default function DeployForm() {
           null}
         {(["commit"].includes(type)) ?
           <Form.Item
-            labelCol={{span: 5}}
+            labelCol={{span: 8}}
             wrapperCol={{span: 16}}
             rules={[{required: true}]}
             label="Commit"
@@ -126,7 +121,7 @@ export default function DeployForm() {
           null}
         {(["tag"].includes(type)) ?
           <Form.Item
-            labelCol={{span: 5}}
+            labelCol={{span: 8}}
             wrapperCol={{span: 10}}
             rules={[{required: true}]}
             label="Tag"
@@ -155,7 +150,7 @@ export default function DeployForm() {
           </Form.Item> : 
           null}
           <Form.Item 
-            wrapperCol={{offset:5, span: 10}}
+            wrapperCol={{offset:8, span: 10}}
           >
             <Button 
               size="large"
