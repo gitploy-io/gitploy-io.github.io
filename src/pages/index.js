@@ -20,7 +20,7 @@ export default () => (
     <div style={{ marginTop: "120px"}} >
       <Row >
         <Col span={24} md={{span: 12, offset: 6}} style={{textAlign: "center"}}>
-          <Title style={{color: "#120338"}} level={1}>Builds your deployment system around GitHub.</Title>
+          <Title style={{color: colorDeepPurple}} level={1}>Builds your deployment system around GitHub.</Title>
         </Col>
       </Row>
       <Row >
@@ -56,32 +56,56 @@ export default () => (
     <Row style={{ marginTop: "200px"}}>
       <Col offset={1} span={22} lg={{span: 16, offset: 4}}>
         <Row>
-          <Col span={24} md={{span: 11}}>
+          <Col span={24} md={{span: 11}} style={{paddingTop: "30px"}}>
+            <Title style={{color: colorDeepPurple}} level={3}>Powered By GitHub</Title>
+            <Paragraph><Text type="secondary" strong>Gitploy enable teams or organizations to build loosely coupled tooling around GitHub deployment API.</Text></Paragraph>
+            <Paragraph><Text type="secondary" strong>Do not worry about the implementation details of deploying different types of applications.</Text></Paragraph>
+          </Col>
+          <Col span={24} md={{span: 11, offset: 2}}>
+            <Image src={GithubLogo} preview={false}/>
+          </Col>
+        </Row>
+      </Col>
+    </Row>
+    <Row style={{ marginTop: "150px"}}>
+      <Col offset={1} span={22} lg={{span: 16, offset: 4}}>
+        <Row>
+          <Col span={0} md={{span: 11}} >
+            <CodeHighliter />
+          </Col>
+          <Col span={24} md={{span: 11, offset: 2}}>
             <Title style={{color: colorDeepPurple}} level={3}>Configuration as code</Title>
             <Paragraph><Text type="secondary" strong>Pipeline is configured with a simple, easy‑to‑read file that you commit to your git repository.</Text></Paragraph>
             <Paragraph><Text type="secondary" strong>Build an advanced deployment pipeline from scratch in minutes.</Text></Paragraph>
           </Col>
-          <Col span={24} md={{span: 11, offset: 2}}>
+          <Col span={24} md={0}>
             <CodeHighliter />
           </Col>
         </Row>
       </Col>
     </Row>
     <Row style={{ marginTop: "200px"}}>
-      <Col offset={1} span={22} lg={{span: 16, offset: 4}}>
-        <Row>
-          <Col span={0} md={{span: 11}}>
-            <Image src={GithubLogo} preview={false}/>
-          </Col>
-          <Col span={24} md={{span: 11, offset: 2}} style={{paddingTop: "30px"}}>
-            <Title style={{color: colorDeepPurple}} level={3}>Powered By Github</Title>
-            <Paragraph><Text type="secondary" strong>Gitploy enable teams or organizations to build loosely coupled tooling around GitHub deployment API.</Text></Paragraph>
-            <Paragraph><Text type="secondary" strong>Do not worry about the implementation details of deploying different types of applications.</Text></Paragraph>
-          </Col>
-          <Col span={24} md={0}>
-            <Image src={GithubLogo} preview={false}/>
-          </Col>
-        </Row>
+      <Col span={24} md={{span: 12, offset: 6}} style={{textAlign: "center"}}>
+        <Paragraph>
+          <Title style={{color: colorDeepPurple}} level={2}>Install Gitploy in Minutes</Title>
+          <Title level={5}>Download our official Docker image or build from source. It is totally free up to 5 users. No need to talk with sales or request a trial license. </Title>
+        </Paragraph>
+      </Col>
+    </Row>
+    <Row style={{marginTop: "20px"}}>
+      <Col span={24}style={{textAlign: "center"}}>
+        <Space>
+          <Button size="large" type="primary" >
+            <a href="https://docs.gitploy.io/" target="_blank">
+              Install Gitploy
+            </a>
+          </Button>
+          <Button size="large" type="text" >
+            <a href="https://cloud.gitploy.io/" target="_blank">
+              Try free cloud offering
+            </a>
+          </Button>
+        </Space>
       </Col>
     </Row>
   </div>
