@@ -88,7 +88,7 @@ export default () => (
       <Col span={24} md={{span: 12, offset: 6}} style={{textAlign: "center"}}>
         <Paragraph>
           <Title style={{color: colorDeepPurple}} level={2}>Install Gitploy in Minutes</Title>
-          <Title level={5}>Download our official Docker image or build from source. It is totally free up to 5 users. No need to talk with sales or request a trial license. </Title>
+          <Title type="secondary" level={5}>Download our official Docker image or build from source. It is totally free up to 5 users. No need to talk with sales or request a trial license. </Title>
         </Paragraph>
       </Col>
     </Row>
