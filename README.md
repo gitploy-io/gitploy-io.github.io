@@ -1,3 +1,3 @@
-# React-Static - Basic Template
+# Website
 
-To use this template, run `react-static create` and use the `basic` template.
+This is the [website](https://www.gitploy.io) of Gtiploy.
