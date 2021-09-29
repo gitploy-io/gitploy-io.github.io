@@ -67,7 +67,7 @@ export default () => (
         </Row>
       </Col>
     </Row>
-    <Row style={{ marginTop: "150px"}}>
+    <Row style={{ marginTop: "100px"}}>
       <Col offset={1} span={22} lg={{span: 16, offset: 4}}>
         <Row>
           <Col span={0} md={{span: 11}} >
@@ -84,29 +84,37 @@ export default () => (
         </Row>
       </Col>
     </Row>
-    <Row style={{ marginTop: "200px"}}>
-      <Col span={24} md={{span: 12, offset: 6}} style={{textAlign: "center"}}>
-        <Paragraph>
-          <Title style={{color: colorDeepPurple}} level={2}>Install Gitploy in Minutes</Title>
-          <Title type="secondary" level={5}>Download our official Docker image or build from source. It is totally free up to 5 users. No need to talk with sales or request a trial license. </Title>
-        </Paragraph>
-      </Col>
-    </Row>
-    <Row style={{marginTop: "20px"}}>
-      <Col span={24}style={{textAlign: "center"}}>
-        <Space>
-          <Button size="large" type="primary" >
-            <a href="https://docs.gitploy.io/" target="_blank">
-              Install Gitploy
-            </a>
-          </Button>
-          <Button size="large" type="text" >
-            <a href="https://cloud.gitploy.io/" target="_blank">
-              Try free cloud offering
-            </a>
-          </Button>
-        </Space>
-      </Col>
-    </Row>
+    <div style={{ marginTop: "200px"}}>
+      <Row>
+        <Col span={24} md={{span: 12, offset: 6}} style={{textAlign: "center"}}>
+          <Paragraph>
+            <Title style={{color: colorDeepPurple}} level={2}>Install Gitploy in Minutes</Title>
+          </Paragraph>
+        </Col>
+      </Row>
+      <Row>
+        <Col span={18} offset={3} md={{span: 8, offset: 8}} style={{textAlign: "center"}}>
+          <Paragraph>
+            <Title type="secondary" level={5}>Download our official Docker image or build from source. <br /> No need to talk with sales or request a trial license.</Title>
+          </Paragraph>
+        </Col>
+      </Row>
+      <Row style={{marginTop: "20px"}}>
+        <Col span={24}style={{textAlign: "center"}}>
+          <Space>
+            <Button size="large" type="primary" >
+              <a href="https://docs.gitploy.io/" target="_blank">
+                Install Gitploy
+              </a>
+            </Button>
+            <Button size="large" type="text" >
+              <a href="https://cloud.gitploy.io/" target="_blank">
+                Try free cloud offering
+              </a>
+            </Button>
+          </Space>
+        </Col>
+      </Row>
+    </div>
   </div>
 )
