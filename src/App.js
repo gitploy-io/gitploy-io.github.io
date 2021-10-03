@@ -2,7 +2,6 @@ import React from 'react'
 import { Root, Routes, addPrefetchExcludes } from 'react-static'
 
 import { Router } from 'components/Router'
-import Header from 'components/Header'
 import Footer from 'components/Footer'
 import { Content } from 'components/Layout'
 import Dynamic from 'containers/Dynamic'
@@ -15,7 +14,6 @@ addPrefetchExcludes(['dynamic'])
 function App() {
   return (
     <Root>
-      <Header />
       <Content>
         <React.Suspense fallback={<em></em>}>
           <Router>

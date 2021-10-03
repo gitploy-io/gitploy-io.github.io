@@ -9,7 +9,7 @@ import {
   message
 } from 'antd'
 
-const { Text } = Typography
+const { Paragraph, Text } = Typography
 
 export default function DeployForm() {
 
@@ -32,8 +32,11 @@ export default function DeployForm() {
 
   return (
     <Card
-      hoverable
+      className="gitploy-shadow"
     >
+      <Paragraph style={{textAlign: "center"}}>
+        <Text style={{fontSize: 24}} strong>Actual Deploy Demo</Text>
+      </Paragraph>
       <Form 
         name="form"
         style={{marginTop: "20px"}}

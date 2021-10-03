@@ -9,7 +9,7 @@ import HeaderLink from 'components/HeaderLink'
 
 export default function Header() {
   return (
-    <Row style={{marginTop: "50px"}}>
+    <Row>
       <Col offset={1} span={22} lg={{span: 14, offset: 5}}>
         <Row >
           <Col lg={12}>

@@ -5,15 +5,16 @@
 @primary-color: @purple-6;
 @info-color: @purple-6;
 @processing-color: @purple-6;
-
-// Layout
-@layout-header-background: @purple-10;
-@layout-body-background: #fff;
-@border-radius-base: 5px;
+@text-color-secondary: fade(@purple-10, 60%);
+@border-radius-base: 10px;
 
 // Font
+@font-family: Inter;
 @text-color: @purple-10;
-@font-size-base: 18px;
+@font-size-base: 16px;
+
+// Card
+// @card-shadow: 4px 4px 66px rgb(154 147 196 / 10%);
 
 // Gitploy
 @gitploy-prefix: ~'gitploy';
@@ -57,5 +58,9 @@
     > code {
       border: 0;
     }
+  }
+
+  &-shadow {
+    box-shadow: 4px 4px 66px rgba(154, 147, 196, 0.1);
   }
 }

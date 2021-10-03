@@ -7,6 +7,7 @@ import {
   Button,
 } from 'antd'
 
+import Header from 'components/Header'
 import FeatureTable from '../components/FeatureTable'
 import PricingCard from '../components/PricingCard'
 
@@ -17,6 +18,9 @@ const colorDeepPurple = "#120338"
 export default function Pricing() {
   return (
     <div>
+      <div style={{padding: "50px 0"}}>
+        <Header />
+      </div>
       <div>
         <Row style={{ marginTop: "120px"}}>
           <Col span={24} md={{span: 12, offset: 6}} style={{textAlign: "center"}}>

@@ -8,47 +8,62 @@ import {
   Image,
 } from 'antd'
 
+import Header from 'components/Header'
 import GithubLogo from '../assets/github.jpeg'
 import CodeHighliter from '../components/CodeHighliter'
 import DeployForm from '../components/DeployForm'
+import LargeButton from '../components/LargeButton'
+
+import BackgroundImage from '../assets/background.png'
 
 const colorDeepPurple = "#120338"
 const { Title, Text, Paragraph } = Typography
 
 export default () => (
   <div >
-    <div style={{ marginTop: "120px"}} >
+    <div style={{ 
+      backgroundImage: `url(${BackgroundImage})`,
+      backgroundRepeat: "no-repeat",
+      backgroundPositionY: "-100px",    // Move the image top.
+    }} 
+    >
+      <div style={{padding: "50px 0"}}>
+        <Header />
+      </div>
       <Row >
-        <Col span={24} md={{span: 12, offset: 6}} style={{textAlign: "center"}}>
+        <Col span={24} md={{span: 8, offset: 8}} style={{textAlign: "center"}}>
           <Title style={{color: colorDeepPurple}} level={1}>Builds your deployment system around GitHub.</Title>
         </Col>
       </Row>
       <Row >
-        <Col span={18} offset={3} md={{span: 6, offset: 9}} style={{textAlign: "center"}}>
-          <Title type="secondary" level={5}>Gitploy is the easiest way to build an advanced deployment system around Github deployment API.</Title>
+        <Col span={24} md={{span: 8, offset: 8}} style={{textAlign: "center"}}>
+          <Text type="secondary" style={{fontSize: 24}}>Gitploy is the easiest way to build an advanced deployment system around Github deployment API.</Text>
         </Col>
       </Row>
       <Row style={{marginTop: "20px"}}>
         <Col span={24}style={{textAlign: "center"}}>
           <Space>
-            <Button size="large" type="primary" >
-              <a href="https://docs.gitploy.io/" target="_blank">
-                Start Building
+            <LargeButton
+              size="large"
+              type="primary"
+            >
+              <a href="https://docs.gitploy.io/">
+                START BUILDING
               </a>
-            </Button>
-            <Button size="large" type="text" >
-              <a href="https://docs.gitploy.io/" target="_blank">
-                Read Docs
+            </LargeButton>
+            <LargeButton 
+              size="large" 
+              type="text" 
+            >
+              <a href="https://docs.gitploy.io/">
+                READ DOCS
               </a>
-            </Button>
+            </LargeButton>
           </Space>
         </Col>
       </Row>
       <Row style={{marginTop: "100px"}}>
         <Col span={22} offset={1} md={{span: 16, offset: 4}} lg={{span: 12, offset: 6}}>
-          <Paragraph style={{textAlign: "center"}}>
-            <Text type="secondary">↓ Actual Deploy Demo ↓</Text>
-          </Paragraph>
           <DeployForm />
         </Col>
       </Row>
