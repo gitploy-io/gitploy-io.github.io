@@ -10,7 +10,7 @@ export default function LargeButton(props) {
       {...buttonProps}
       style={{
         width: 282,
-        height: 84,
+        height: 80,
         fontSize: 24,
       }}
     >

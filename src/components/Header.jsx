@@ -18,21 +18,25 @@ export default function Header() {
       <Col offset={1} span={22} lg={{span: 14, offset: 5}}>
         <Row >
           <Col lg={12}>
-            <img 
-              src={LogoImage}
-              style={{
-                width: 52
-              }}
-            />
-            &nbsp;&nbsp;
-            <Text style={{
-                fontSize: 32,
-                verticalAlign: "bottom",
-              }}
-              strong
+            <a
+              href="/"
             >
-              GITPLOY
-            </Text>
+              <img 
+                src={LogoImage}
+                style={{
+                  width: 52
+                }}
+              />
+              &nbsp;&nbsp;
+              <Text style={{
+                  fontSize: 32,
+                  verticalAlign: "bottom",
+                }}
+                strong
+              >
+                GITPLOY
+              </Text>
+            </a>
           </Col>
           <Col lg={3}>
             <HeaderLink>
