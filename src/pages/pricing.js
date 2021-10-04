@@ -69,6 +69,10 @@ export default function Pricing() {
                 feature: "GitHub",
                 enterprise: true,
               },
+              {
+                feature: "GitHub Enterprise",
+                enterprise: true,
+              },
             ]}
           />
         </Col>

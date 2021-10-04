@@ -62,7 +62,7 @@ export default function Header() {
             </HeaderLink>
           </Col>
           {/* Mobile view */}
-          <Col span={3} offset={8} lg={0} style={{paddingTop: 10}}>
+          <Col span={11} lg={0} style={{paddingTop: 10, textAlign: "right"}}>
             <Dropdown overlay={
               <Menu>
                 <Menu.Item key={0}>
