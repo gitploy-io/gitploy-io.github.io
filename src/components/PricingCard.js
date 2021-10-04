@@ -28,7 +28,7 @@ export default function PricingCard() {
         >
           <p style={{fontSize: 14}}>Choose the number of Developers:</p>
           <Select 
-            style={{width: "300px"}}
+            style={{width: "100%"}}
             defaultValue={cnt}
             onSelect={onSelectCnt}
           >
