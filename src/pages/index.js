@@ -36,7 +36,7 @@ export default () => (
         </Col>
       </Row>
       <Row >
-        <Col span={22} offset={1} md={{span: 8, offset: 8}} style={{textAlign: "center"}}>
+        <Col span={24} md={{span: 8, offset: 8}} style={{textAlign: "center"}}>
           <Text type="secondary" style={{fontSize: 24}}>Gitploy is the easiest way to build an advanced deployment system around Github deployment API.</Text>
         </Col>
       </Row>

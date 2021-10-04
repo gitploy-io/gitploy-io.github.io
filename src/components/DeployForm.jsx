@@ -153,7 +153,8 @@ export default function DeployForm() {
           </Form.Item> : 
           null}
           <Form.Item 
-            wrapperCol={{offset:8, span: 10}}
+            label=""
+            wrapperCol={{span: 10, md:{span: 10, offset: 8}}}
           >
             <Button 
               size="large"
