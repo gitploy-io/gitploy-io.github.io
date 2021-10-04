@@ -2,8 +2,11 @@ import React from 'react'
 import { 
   Row, 
   Col,
-  Typography
+  Typography,
+  Dropdown,
+  Menu,
 } from 'antd'
+import { MenuOutlined } from '@ant-design/icons'
 
 import { Link } from 'components/Router'
 import HeaderLink from 'components/HeaderLink'
@@ -38,25 +41,54 @@ export default function Header() {
               </Text>
             </a>
           </Col>
-          <Col lg={3}>
+          <Col span={0} lg={3}>
             <HeaderLink>
               <a href="https://cloud.gitploy.io/">Cloud</a>
             </HeaderLink>
           </Col>
-          <Col lg={3}>
+          <Col span={0} lg={3}>
             <HeaderLink>
               <a href="https://docs.gitploy.io/">Docs</a>
             </HeaderLink>
           </Col>
-          <Col lg={{span: 3}}>
+          <Col span={0} lg={{span: 3}}>
             <HeaderLink>
               <Link to="/pricing">Pricing</Link>
             </HeaderLink>
           </Col>
-          <Col lg={{span: 3}}>
+          <Col span={0} lg={{span: 3}}>
             <HeaderLink>
               <a href="https://github.com/gitploy-io/gitploy/discussions">Community</a>
             </HeaderLink>
+          </Col>
+          {/* Mobile view */}
+          <Col span={3} offset={8} lg={0} style={{paddingTop: 10}}>
+            <Dropdown overlay={
+              <Menu>
+                <Menu.Item key={0}>
+                  <HeaderLink>
+                    <a href="https://cloud.gitploy.io/">Cloud</a>
+                  </HeaderLink>
+                </Menu.Item>
+                <Menu.Item key={1}>
+                  <HeaderLink>
+                    <a href="https://docs.gitploy.io/">Docs</a>
+                  </HeaderLink>
+                </Menu.Item>
+                <Menu.Item key={2}>
+                  <HeaderLink>
+                    <Link to="/pricing">Pricing</Link>
+                  </HeaderLink>
+                </Menu.Item>
+                <Menu.Item key={3}>
+                  <HeaderLink>
+                    <a href="https://github.com/gitploy-io/gitploy/discussions">Community</a>
+                  </HeaderLink>
+                </Menu.Item>
+              </Menu>
+            }>
+              <MenuOutlined />
+            </Dropdown>
           </Col>
         </Row>
       </Col>
