@@ -9,7 +9,7 @@ import ReactMarkdown from 'react-markdown'
 import Header from 'components/Header'
 
 const markdown = `
-**Updated September 12, 2018**
+**Updated October 5, 2021**
 
 These Terms of Service (the “Terms”) describe the rights and responsibilities that apply to your use of Gitploy (the “Service”), owned and operated by Gitploy Inc. (“Gitploy”, “we”, “our” or “us”).
 

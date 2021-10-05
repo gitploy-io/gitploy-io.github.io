@@ -13,7 +13,7 @@ export default function Footer() {
     >
       <div >
         <Paragraph>
-          <Text type="secondary">© 2021 Gitploy.io, Inc All rights reserved. <br/></Text>
+          <Text type="secondary">© 2021 Gitploy.IO, Inc All rights reserved. <br/></Text>
         </Paragraph>
       </div>
       <div>
@@ -23,9 +23,9 @@ export default function Footer() {
           }}
         >
           <Space>
-          <Link type="secondary" href="/terms" >Terms of Service</Link>
-          <Link type="secondary" href="https://github.com/gitploy-io/gitploy/discussions" >Community</Link>
-
+            <Link type="secondary" href="/terms" >Terms of Service</Link>
+            <Text type="secondary"> | </Text>
+            <Link type="secondary" href="https://github.com/gitploy-io/gitploy/discussions" >Community</Link>
           </Space>
         </Paragraph>
       </div>
