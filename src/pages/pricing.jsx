@@ -42,7 +42,7 @@ export default function Pricing() {
               </a>
             </Button>
             <Button size="large" type="text" >
-              <a href="mailto:opsdownn@gmail.com" target="_blank">
+              <a href="mailto:support@gitploy.io" target="_blank">
                 CONTACT SALES
               </a>
             </Button>
