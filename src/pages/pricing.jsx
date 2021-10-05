@@ -8,6 +8,7 @@ import {
 } from 'antd'
 
 import Header from 'components/Header'
+import Footer from 'components/Footer'
 import FeatureTable from '../components/FeatureTable'
 import PricingCard from '../components/PricingCard'
 
@@ -154,6 +155,9 @@ export default function Pricing() {
           />
         </Col>
       </Row>
+      <div>
+        <Footer />
+      </div>
     </div>
   )
 }

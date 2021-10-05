@@ -7,6 +7,7 @@ import {
 } from 'antd'
 
 import Header from 'components/Header'
+import Footer from 'components/Footer'
 import CodeHighliter from '../components/CodeHighliter'
 import DeployForm from '../components/DeployForm'
 import LargeButton from '../components/LargeButton'
@@ -175,6 +176,9 @@ export default () => (
           </Space>
         </Col>
       </Row>
+    </div>
+    <div>
+      <Footer />
     </div>
   </div>
 )

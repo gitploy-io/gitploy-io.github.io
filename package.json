@@ -15,6 +15,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-hot-loader": "^4.13.0",
+    "react-markdown": "^7.0.1",
     "react-static": "^7.5.3",
     "react-static-plugin-less": "^7.3.0",
     "react-static-plugin-reach-router": "^7.5.3",

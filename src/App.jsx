@@ -2,7 +2,6 @@ import React from 'react'
 import { Root, Routes, addPrefetchExcludes } from 'react-static'
 
 import { Router } from 'components/Router'
-import Footer from 'components/Footer'
 import { Content } from 'components/Layout'
 import Dynamic from 'containers/Dynamic'
 
@@ -22,7 +21,6 @@ function App() {
           </Router>
         </React.Suspense>
       </Content>
-      <Footer />
     </Root>
   )
 }
