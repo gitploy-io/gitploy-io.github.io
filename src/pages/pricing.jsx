@@ -4,13 +4,13 @@ import {
   Col, 
   Typography,
   Space,
-  Button,
 } from 'antd'
 
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 import FeatureTable from '../components/FeatureTable'
 import PricingCard from '../components/PricingCard'
+import LargeButton from '../components/LargeButton'
 
 const { Title, Text } = Typography
 
@@ -36,16 +36,21 @@ export default function Pricing() {
         <Row style={{marginTop: "20px"}}>
           <Col span={24}style={{textAlign: "center"}}>
           <Space>
-            <Button size="large" type="primary" >
+            <LargeButton size="large" type="primary" >
               <a href="https://docs.gitploy.io/" target="_blank">
                 INSTALL NOW
               </a>
-            </Button>
-            <Button size="large" type="text" >
+            </LargeButton>
+            <LargeButton size="large" type="text" 
+              style={{ 
+                color: "#766D8A",
+                boxShadow: "4px 4px 66px rgba(154, 147, 196, 0.2)",
+              }}
+            >
               <a href="mailto:support@gitploy.io" target="_blank">
                 CONTACT SALES
               </a>
-            </Button>
+            </LargeButton>
           </Space>
           </Col>
         </Row>
