@@ -38,7 +38,7 @@ export default () => (
       </Row>
       <Row >
         <Col span={24} md={{span: 8, offset: 8}} style={{textAlign: "center"}}>
-          <Text type="secondary" style={{fontSize: 24}}>Gitploy is the easiest way to build an advanced deployment system around Github deployment API.</Text>
+          <Text type="secondary" style={{fontSize: 24}}>Gitploy is the easiest way to build an advanced deployment system around GitHub.</Text>
         </Col>
       </Row>
       <Row style={{marginTop: "20px"}}>
@@ -80,10 +80,13 @@ export default () => (
           <Col span={24} md={{span: 11}}>
             <Title style={{color: colorDeepPurple}} level={2}>Powered By GitHub</Title>
             <Paragraph>
-              <Text type="secondary" style={{fontSize: 24}}>Gitploy enable teams or organizations to build loosely coupled tooling around GitHub deployment API.</Text>
+              <Text type="secondary" style={{fontSize: 24}}>Deploy a specific ref (branch, commit, tag) by the easy-way.</Text>
             </Paragraph>
             <Paragraph>
-              <Text type="secondary" style={{fontSize: 24}}>Do not worry about the implementation details of deploying different types of applications.</Text>
+              <Text type="secondary" style={{fontSize: 24}}>Build an event-driven deployment system around GitHub deployment API.</Text>
+            </Paragraph>
+            <Paragraph>
+              <Text type="secondary" style={{fontSize: 24}}>Integrate with GitHub Action in minutes.</Text>
             </Paragraph>
           </Col>
           <Col span={24} md={0} className="gitploy-shadow" >
