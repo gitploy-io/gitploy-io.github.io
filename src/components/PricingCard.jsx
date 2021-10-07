@@ -49,7 +49,7 @@ export default function PricingCard() {
           <p >
             <span style={{fontSize: 30}}>$ {cnt * price}</span> <span style={{fontSize: 30, color: "gray"}}> / year</span>
           </p>
-          <Button type="primary" size="large" href="https://forms.gle/DcR2jbF3mZMATTGF9">PURCHASE</Button>
+          <Button type="primary" size="large" href="https://forms.gle/pE4GfmxkZviyHj9FA">PURCHASE</Button>
         </Col>
       </Row>
     </Card>
