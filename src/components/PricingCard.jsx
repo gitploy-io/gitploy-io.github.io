@@ -10,7 +10,7 @@ import {
 
 
 export default function PricingCard() {
-  const price = 60
+  const price = 50
   const options = [10, 15, 20, 25, 30, 35, 40, 45, 50];
 
   const [ cnt, setCnt ] = useState(10);
