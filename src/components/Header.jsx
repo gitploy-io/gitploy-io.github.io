@@ -82,7 +82,7 @@ export default function Header() {
                 </Menu.Item>
                 <Menu.Item key={3}>
                   <HeaderLink>
-                    <a href="https://github.com/gitploy-io/gitploy/discussions">Community</a>
+                    <a href="https://github.com/gitploy-io">Community</a>
                   </HeaderLink>
                 </Menu.Item>
               </Menu>
