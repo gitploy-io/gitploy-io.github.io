@@ -26,6 +26,7 @@ export default () => (
       backgroundImage: `url(${BackgroundImage})`,
       backgroundRepeat: "no-repeat",
       backgroundPositionY: "-100px",    // Move the image top.
+      backgroundPositionX: "center",
     }} 
     >
       <div style={{padding: "50px 0"}}>
