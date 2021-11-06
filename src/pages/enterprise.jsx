@@ -25,7 +25,7 @@ export default function Pricing() {
       <div>
         <Row style={{ marginTop: "120px"}}>
           <Col span={24} md={{span: 12, offset: 6}} style={{textAlign: "center"}}>
-            <Title style={{color: colorDeepPurple}} level={1}>Pricing</Title>
+            <Title style={{color: colorDeepPurple}} level={1}>ENTERPRISE EDITION</Title>
           </Col>
         </Row>
         <Row >
@@ -73,10 +73,12 @@ export default function Pricing() {
             datas={[
               {
                 feature: "GitHub",
+                oss: true,
                 enterprise: true,
               },
               {
                 feature: "GitHub Enterprise",
+                oss: true,
                 enterprise: true,
               },
             ]}
@@ -96,6 +98,7 @@ export default function Pricing() {
             datas={[
               {
                 feature: "SQLite",
+                oss: true,
                 enterprise: true
               },
               {
@@ -123,10 +126,12 @@ export default function Pricing() {
             datas={[
               {
                 feature: "Deploy",
+                oss: true,
                 enterprise: true
               },
               {
                 feature: "Rollback",
+                oss: true,
                 enterprise: true
               },
               {
@@ -134,7 +139,27 @@ export default function Pricing() {
                 enterprise: true
               },
               {
-                feature: "Approval",
+                feature: "Review",
+                enterprise: true
+              },
+            ]}
+          />
+        </Col>
+      </Row>
+      <Row style={{marginTop: "100px"}}>
+        <Col span={22} offset={1} md={{span: 16, offset: 4}} lg={{span: 10, offset: 7}}>
+        <Title 
+            type="secondary" 
+            level={5} 
+            style={{textAlign: "center"}}
+          >
+            DevOps Metrics
+          </Title>
+          <FeatureTable 
+            datas={[
+              {
+                feature: "Prometheus",
+                oss: true,
                 enterprise: true
               },
             ]}

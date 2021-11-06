@@ -48,12 +48,12 @@ export default function Header() {
           </Col>
           <Col span={0} lg={3}>
             <HeaderLink>
-              <a href="https://docs.gitploy.io/">Docs</a>
+              <Link to="/enterprise">Enterprise</Link>
             </HeaderLink>
           </Col>
-          <Col span={0} lg={{span: 3}}>
+          <Col span={0} lg={3}>
             <HeaderLink>
-              <Link to="/pricing">Pricing</Link>
+              <a href="https://docs.gitploy.io/">Docs</a>
             </HeaderLink>
           </Col>
           <Col span={0} lg={{span: 3}}>
@@ -82,7 +82,7 @@ export default function Header() {
                 </Menu.Item>
                 <Menu.Item key={3}>
                   <HeaderLink>
-                    <a href="https://github.com/gitploy-io/gitploy/discussions">Community</a>
+                    <a href="https://github.com/gitploy-io">Community</a>
                   </HeaderLink>
                 </Menu.Item>
               </Menu>
