@@ -13,6 +13,7 @@ addPrefetchExcludes(['dynamic'])
 function App() {
   return (
     <Root>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
       <Content>
         <React.Suspense fallback={<em></em>}>
           <Router>
