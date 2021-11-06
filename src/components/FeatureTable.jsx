@@ -8,7 +8,15 @@ export default function FeaturesTable(props) {
       title: "FEATURE",
       dataIndex: "feature",
       key: "feature",
-      align: "left"
+      align: "left",
+      width: "40%" ,
+    },
+    {
+      title: "OSS",
+      dataIndex: "oss",
+      key: "oss",
+      align: "center",
+      render: (ok) => (ok)? <CheckOutlined /> : null
     },
     {
       title: "ENTERPRISE",
