@@ -159,7 +159,6 @@ export default function Pricing() {
             datas={[
               {
                 feature: "Prometheus",
-                oss: true,
                 enterprise: true
               },
             ]}
