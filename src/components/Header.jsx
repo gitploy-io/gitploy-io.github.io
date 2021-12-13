@@ -43,7 +43,7 @@ export default function Header() {
           </Col>
           <Col span={0} lg={3}>
             <HeaderLink>
-              <a href="https://github.com/marketplace/gtiploy">Cloud</a>
+              <a href="https://cloud.gitploy.io/">Cloud</a>
             </HeaderLink>
           </Col>
           <Col span={0} lg={3}>
