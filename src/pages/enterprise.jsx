@@ -130,6 +130,11 @@ export default function Pricing() {
                 enterprise: true
               },
               {
+                feature: "Auto Deploy",
+                oss: true,
+                enterprise: true
+              },
+              {
                 feature: "Rollback",
                 oss: true,
                 enterprise: true
