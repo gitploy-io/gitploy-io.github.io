@@ -135,6 +135,12 @@ export default function Pricing() {
                 enterprise: true
               },
               {
+
+                feature: "Deployment Safety",
+                oss: true,
+                enterprise: true
+              },
+              {
                 feature: "Rollback",
                 oss: true,
                 enterprise: true
@@ -177,10 +183,14 @@ export default function Pricing() {
             level={5} 
             style={{textAlign: "center"}}
           >
-            INTEGRATION
+            Push Notification
           </Title>
           <FeatureTable 
             datas={[
+              {
+                feature: "Browser",
+                enterprise: true
+              },
               {
                 feature: "Slack",
                 enterprise: true
