@@ -135,6 +135,7 @@ export default function Pricing() {
                 enterprise: true
               },
               {
+
                 feature: "Deployment Safety",
                 oss: true,
                 enterprise: true
