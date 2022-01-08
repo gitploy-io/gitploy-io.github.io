@@ -39,7 +39,7 @@ export default function PricingCard() {
           <p
             style={{fontSize: 14, marginTop: 10}}
           >
-            If you would like to purchase a subscription for 50+ developers please <a href="mailto:support@gitploy.io" target="_blank">Contact Sales.</a>
+            If you would like to purchase a subscription for 40+ developers please <a href="mailto:support@gitploy.io" target="_blank">Contact Sales.</a>
           </p>
         </Col>
         <Col 
